@@ -1,3 +1,6 @@
+//James Vu
+//Project 1
+
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
