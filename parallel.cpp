@@ -1,6 +1,3 @@
-//James Vu
-//Project 1
-
 #include <unistd.h>
 #include <sys/types.h>
 #include <stdio.h>
@@ -39,10 +36,13 @@ void create_children(vector<string>& urls) {
 			}
 		}
 	}
+	for(vector<string>::iterator urlIt = urls.begin();
+      urlIt != urls.end(); ++urlIt) {
 		// printf("hello, I am parent of %d (pid:%d)\n",
 		//  pid, (int) getpid());
 		wait(NULL);
 		// printf("Child Complete\n");
+	}
 }
 
 /**
